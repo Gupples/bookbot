@@ -35,8 +35,7 @@ Inputs:
     characters - A dictionary {character(string): count(int)} of each 
         character's occurance
 Returns:
-    characters - A dictionary {character(string): count(int)} of each 
-        character's occurance, sorted by each character's count
+    character_list - A list of each character in the text sorted by occurrance
 '''
 def sort_dictionary(characters):
     
@@ -44,4 +43,7 @@ def sort_dictionary(characters):
     def sort_on(items):
         return items["num"]
     
-    
+    # Log each character's key and count
+    character_list = []
+    for char in characters:
+        character_list.append(f'{"char": "{char[0]}", "num": "{char[1]}"}')

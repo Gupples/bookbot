@@ -4,6 +4,11 @@ def get_book_text(filepath):
         file_contents = f.read()
         return file_contents
     return None
+    
+# Take a book's contents as a string, return the number of words in the string.
+def count_book_words(contents):
+    word_list = contents.split()
+    return len(word_list)
 
 # Use get_book_text with the relative bpath to a file to print the contents of the book to the console.
 def main():

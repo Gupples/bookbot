@@ -39,4 +39,9 @@ Returns:
         character's occurance, sorted by each character's count
 '''
 def sort_dictionary(characters):
-    pass
+    
+    # Helper function to use for sorting.
+    def sort_on(items):
+        return items["num"]
+    
+    

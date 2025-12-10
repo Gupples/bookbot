@@ -1,4 +1,4 @@
-from stats import count_book_words
+from stats import count_book_words, count_book_characters
 
 # Takes a filepath as input and returns the contents of the file as a string.
 def get_book_text(filepath):
@@ -10,7 +10,9 @@ def get_book_text(filepath):
 # Use get_book_text with the relative bpath to a file to print the contents of the book to the console.
 def main():
     text = get_book_text("books/frankenstein.txt")
+    text_characters = count_book_characters(text)
     print(f"Found {count_book_words(text)} total words")
+    print(text_characters)
 
 if __name__ == "__main__":
     main()

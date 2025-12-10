@@ -47,3 +47,7 @@ def sort_dictionary(characters):
     character_list = []
     for char in characters:
         character_list.append(f'{"char": "{char[0]}", "num": "{char[1]}"}')
+    
+    # Sort by count
+    character_list.sort(reverse=True, key=sort_on)
+    return character_list

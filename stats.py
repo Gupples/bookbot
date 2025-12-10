@@ -10,3 +10,20 @@ def count_book_words(contents):
     word_list = contents.split()
     return len(word_list)
 
+'''
+COUNT BOOK CHARACTERS
+Count the number of times each character (including symbols and spaces) appears in the book.
+Inputs:
+    contents - the contents of a book as a string
+Returns:
+    characters - A dictionary {character(string): count(int)} of each 
+        character's occurance
+'''
+def count_book_characters(contents):
+    characters = {}
+    for char in contents:
+        if char in characters:
+            characters[char.lower()] += 1
+        else:
+            characters[char.lower()] = 1
+    return characters

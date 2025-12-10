@@ -27,3 +27,16 @@ def count_book_characters(contents):
         else:
             characters[char.lower()] = 1
     return characters
+
+'''
+SORT_DICTIONARY
+Sorts a dictionary by character count
+Inputs:
+    characters - A dictionary {character(string): count(int)} of each 
+        character's occurance
+Returns:
+    characters - A dictionary {character(string): count(int)} of each 
+        character's occurance, sorted by each character's count
+'''
+def sort_dictionary(characters):
+    pass

@@ -22,7 +22,7 @@ Returns:
 def count_book_characters(contents):
     characters = {}
     for char in contents:
-        if char in characters:
+        if char.lower() in characters:
             characters[char.lower()] += 1
         else:
             characters[char.lower()] = 1

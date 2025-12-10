@@ -13,7 +13,7 @@ def count_book_words(contents):
 # Use get_book_text with the relative bpath to a file to print the contents of the book to the console.
 def main():
     text = get_book_text("books/frankenstein.txt")
-    print(text)
+    print(f"Found {count_book_words(text)} total words")
 
 if __name__ == "__main__":
     main()

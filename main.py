@@ -14,7 +14,7 @@ def main():
     # The path to the book should be a part of the executed command.
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
-        sys.exit(1)
+        sys.exit(1) # Exit with an error status
 
     filepath = sys.argv[1]
     text = get_book_text(filepath)

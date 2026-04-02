@@ -1,9 +1,9 @@
-# bookbot
+# BookBot
 
 BookBot is my first [Boot.dev](https://www.boot.dev) project! 
-Given a path to a downloaded book, this program will analyze the text and return the word count and each symbol's usage.
+Given a path to a downloaded book, this program will analyze the text and return the word count and character usage.
 
 ## Usage
-Once downloaded, use this command format in the terminal;  
+Once the program and its dependancies are downloaded, use this command format in the terminal;  
 "python3 main.py <path_to_book>"  
-Downloading books as .txt files via [Project Gutenberg](https://www.gutenberg.org/) (Plain Text UTF-8) is recommended
+Downloading books as .txt files via [Project Gutenberg](https://www.gutenberg.org/) (Using file "Plain Text UTF-8") is recommended.
